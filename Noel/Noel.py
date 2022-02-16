@@ -7,9 +7,11 @@ import statistics as st
 def medel(x):
     return sum(x) / len(x)
 def standardav(x):
-    return np.std(x)
+    return st.stdev(x)
 def medianen(x):
     return st.median(x)
+def varbred(x):
+    return max(x) - min(x)
 
 #listan
 x = [1,2,3,4,5]
@@ -18,9 +20,10 @@ x = [1,2,3,4,5]
 svarmed = medel(x)
 svarstandard = standardav(x)
 svarmedian = medianen(x)
+svarvarbred = varbred(x)
 
 #skriver ut svaren
 print("medelvärde: ", svarmed)
 print("standard avikelse: ", svarstandard )
 print("median: ", svarmedian)
-
+print("variations bred: ", svarvarbred)
