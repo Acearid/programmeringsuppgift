@@ -3,7 +3,8 @@ def median(ls):
     x = n // 2
     if n % 2:
         return sorted(ls)[x]
-    return sum(sorted(ls)[x - 1:x + 1]) / 2
+    else:
+        return sum(sorted(ls)[x - 1:x + 1]) / 2
 def std_dev(ls):
     n = len(ls)
     mean = sum(ls) / n
