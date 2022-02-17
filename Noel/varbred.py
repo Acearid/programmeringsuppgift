@@ -4,7 +4,13 @@ def std_dev(ls):
     var = sum((x - mean)** 2 for x in ls) / n
     std_dev = var ** 0.5
     return std_dev
+def median(ls):
+     n = len(ls)
+     mean = sum(ls) / n
+     return mean
 
 ls = [1,2,3,4,5]
 
 print(std_dev(ls))
+
+print(median(ls))
