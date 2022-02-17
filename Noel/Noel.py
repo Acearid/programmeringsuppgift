@@ -1,6 +1,5 @@
 #importerade moduler
 import math
-import numpy as np
 import statistics as st
 
 #funktionerna
