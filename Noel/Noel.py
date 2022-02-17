@@ -1,28 +1,14 @@
 #importerade moduler
-
-import statistics as st
-
-#funktionerna
-def medel(x):
-    return sum(x) / len(x)
-def standardav(x):
-    return st.stdev(x)
-def medianen(x):
-    return st.median(x)
-def varbred(x):
-    return max(x) - min(x)
-
+from sammling import *
 #listan
-x = [1,2,3,4,5]
-
+ls = [1,2,3,4,5,6]
 #variablerna för svaren
-svarmed = medel(x)
-svarstandard = standardav(x)
-svarmedian = medianen(x)
-svarvarbred = varbred(x)
-
+svarmed = medel(ls)
+svarstdev = std_dev(ls)
+svarmedian = median(ls)
+svarvarbred = varbred(ls)
 #skriver ut svaren
 print("medelvärde: ", svarmed)
-print("standard avikelse: ", svarstandard )
+print("standard avikelse: ", svarstdev)
 print("median: ", svarmedian)
 print("variations bred: ", svarvarbred)
