@@ -1,5 +1,5 @@
 #importerade moduler
-import math
+
 import statistics as st
 
 #funktionerna
