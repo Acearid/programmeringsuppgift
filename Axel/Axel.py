@@ -12,7 +12,7 @@ residualer=[]
 for i in lista:
     #i = [x,y]
     x = i[0]
-    y = i[1]
+    y = i[-1]
     #Svar är (x, residual)
     svar = z(x,y,k,m)
     #Sparar bara residualer i kvadrat, för senare
