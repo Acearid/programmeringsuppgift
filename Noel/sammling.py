@@ -25,3 +25,11 @@ def kvartilavst(ls):
     up = median(kvartilup(ls))
     un = median(kvartilun(ls))
     return up - un
+def z(x,y,k,m):
+    return[x,y-(k*x+m)]
+def medel(x):
+    return sum(x) / len(x)
+def coordinates(ls):
+    for i in range(len(ls)):
+        ls[i][1] = ls[i][1] - 1
+    return ls
