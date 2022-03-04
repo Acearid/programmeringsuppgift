@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt #grafverktyg
 from sammling import medel,z #imported medel och z
 
 #Lista med koordinater
@@ -21,8 +20,3 @@ medelresidualer = medel(residualer)
 
 #Räknar ut medelvärdet av residualerna
 print(medelresidualer)
-
-print(residualer)
-
-plt.plot(lista, 'ro', lista)
-plt.show()
