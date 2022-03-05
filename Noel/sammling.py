@@ -1,4 +1,6 @@
-#Funktionen för medianen↓
+#↓Här är alla funktioner sammlade↓
+
+#↓Funktionen för medianen↓
 def median(ls):
     n = len(ls)
     x = n // 2
@@ -6,7 +8,7 @@ def median(ls):
         return sorted(ls)[x]
     else:
         return sum(sorted(ls)[x - 1:x + 1]) / 2
-#Funktionen för standardavikelse↓
+#↓Funktionen för standardavikelse↓
 def std_dev(ls):
     n = len(ls)
     mean = sum(ls) / n
@@ -16,26 +18,26 @@ def std_dev(ls):
 #Funktionen för meanvärde↓
 def mean(x):
     return sum(x) / len(x)
-#Funktionen för variations bred↓
+#↓Funktionen för variations bred↓
 def varbred(x):
     return max(x) - min(x)
-#Funktionen för undre kvartilen↓
+#↓Funktionen för undre kvartilen↓
 def kvartilun(ls):
     ls.sort()
     return ls[0:int(len(ls)/2)]
-#Funktionen för övre kvartilen↓
+#↓Funktionen för övre kvartilen↓
 def kvartilup(ls):
     ls.sort()
     return ls[int(median(ls)):-1]
-#Funktionen för kvartilavstånd↓
+#↓Funktionen för kvartilavstånd↓
 def kvartilavst(ls):
     up = median(kvartilup(ls))
     un = median(kvartilun(ls))
     return up - un
-#funktionen för meanvärde av residualerna↓
+#↓Funktionen för meanvärde av residualerna↓
 def z(x,y,k,m):
     return[x,y-(k*x+m)]
-#Funktionen för residualerna↓
+#↓Funktionen för residualerna↓
 def residualer(l):
     k = 3
     m = 7

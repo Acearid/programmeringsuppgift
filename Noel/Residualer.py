@@ -1,3 +1,4 @@
+#importerar funktionen z från sammlings kåden
 from sammling import z
 #Lista med koordinater
 lista=[[0,1],[2,3],[4,5]]

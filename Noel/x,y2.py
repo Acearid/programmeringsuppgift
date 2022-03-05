@@ -1,7 +1,8 @@
 #importerar residual funktionen från sammlings kåden
-from sammling import residualer
+from sammling import residualermean
 #listan med kordinaterna
 l = [[0,1],[2,3],[4,5]]
-residualer
+
+
 #skriver ut residualerna
-print(residualer(l)[0])
+print(residualermean(l))
