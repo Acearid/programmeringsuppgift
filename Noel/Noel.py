@@ -3,12 +3,12 @@ from sammling import *
 #listan
 ls = [1,2,3,4,5,6]
 #variablerna för svaren
-svarmed = medel(ls)
+svarmed = mean(ls)
 svarstdev = std_dev(ls)
 svarmedian = median(ls)
 svarvarbred = varbred(ls)
 #skriver ut svaren
-print("medelvärde: ", svarmed)
+print("meanvärde: ", svarmed)
 print("standard avikelse: ", svarstdev)
 print("median: ", svarmedian)
 print("variations bred: ", svarvarbred)

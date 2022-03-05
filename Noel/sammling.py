@@ -13,8 +13,8 @@ def std_dev(ls):
     var = sum((x - mean)** 2 for x in ls) / n
     std_dev = var ** 0.5
     return std_dev
-#Funktionen för medelvärde↓
-def medel(x):
+#Funktionen för meanvärde↓
+def mean(x):
     return sum(x) / len(x)
 #Funktionen för variations bred↓
 def varbred(x):
@@ -32,14 +32,13 @@ def kvartilavst(ls):
     up = median(kvartilup(ls))
     un = median(kvartilun(ls))
     return up - un
-#funktionen för medelvärde av residualerna↓
+#funktionen för meanvärde av residualerna↓
 def z(x,y,k,m):
     return[x,y-(k*x+m)]
-#Funktionen för medelvärde↓
-def medel(x):
-    return sum(x) / len(x)
 #Funktionen för residualerna↓
-def coordinates(ls):
-    for i in range(len(ls)):
-        ls[i][1] = ls[i][1] - 1
-    return ls
+def residualer(l):
+    k = 3
+    m = 7
+    for i in range(len(l)):
+        l[i][1] = l[i][1] - (k*l[i][0]+m)
+    return l

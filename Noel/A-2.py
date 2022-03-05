@@ -1,4 +1,4 @@
-from sammling import medel,z #imported medel och z
+from sammling import mean,z #imported mean och z
 
 #Lista med koordinater
 lista=[[0,1],[2,3],[4,5]]
@@ -15,8 +15,8 @@ for i in lista:
     #Sparar bara residualer i kvadrat, för senare
     residualer.append(svar[1]**2)
 
-medelresidualer = medel(residualer)
+meanresidualer = mean(residualer)
 
 
-#Räknar ut medelvärdet av residualerna
-print(medelresidualer)
+#Räknar ut meanvärdet av residualerna
+print(meanresidualer)
