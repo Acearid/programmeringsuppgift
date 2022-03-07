@@ -37,10 +37,3 @@ def kvartilavst(ls):
 #↓Funktionen för meanvärde av residualerna↓
 def z(x,y,k,m):
     return[x,y-(k*x+m)]
-#↓Funktionen för residualerna↓
-def residualer(l):
-    k = 3
-    m = 7
-    for i in range(len(l)):
-        l[i][1] = l[i][1] - (k*l[i][0]+m)
-    return l
